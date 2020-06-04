@@ -10,7 +10,17 @@ $primaryGreen: #126846;
 $accentGreen: #61c193;
 $white: #fafafa;
 $lightGray: #f4f4f4;
+$gray: #e0e0e0;
 $black: #262626;
+
+/* links */
+a {
+  color: $accentGreen;
+  &:hover,
+  &:focus {
+    color: $primaryGreen;
+  }
+}
 
 /* =============
    typography
@@ -30,6 +40,10 @@ h1 {
 body {
   background-color: $lightGray;
   color: $black;
+}
+
+#main-container {
+  padding-top: 25px;
 }
 
 /* header */
@@ -131,6 +145,25 @@ footer {
   footer {
     background-color: $black;
     color: $white;
+  }
+}
+
+/* login & signup */
+
+#login,
+#signup {
+  form {
+    padding: 45px;
+    background-color: $white;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    h1 {
+      padding-top: 0;
+      padding-bottom: 25px;
+    }
+  }
+  p {
+    margin-top: 15px;
   }
 }
 
