@@ -167,6 +167,20 @@ footer {
   }
 }
 
+/* error 404 */
+
+#not-found {
+  text-align: center;
+  h1 {
+    padding-top: 0;
+    margin-bottom: 10px;
+    font-size: 10em;
+  }
+  h3 {
+    margin-bottom: 50px;
+  }
+}
+
 /* =============
    components
    ============= */
