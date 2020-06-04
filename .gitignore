@@ -34,6 +34,3 @@
 
 # Ignore database test files.
 db/test.*
-
-# Ignore further changes made to secrets.yml.
-/config/secrets.yml

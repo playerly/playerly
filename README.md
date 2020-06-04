@@ -47,6 +47,12 @@ production:
   secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
 ```
 
+Prevent Git from tracking the changes made to the `secrets.yml` file.
+
+```
+$ git update-index --skip-worktree config/secrets.yml
+```
+
 Migrate the database.
 
 ```
