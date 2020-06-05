@@ -1,0 +1,35 @@
+# # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   username: MyString
+#   email: MyString
+#   fname: MyString
+#   lname: MyString
+#   bio: MyText
+#   dob: 2020-06-05
+#   password_digest: MyString
+#   gender: one
+#   profile_image: MyString
+#   city: MyString
+#   post_code: MyString
+#   last_active: 2020-06-05 18:29:14
+#   is_private: false
+#   is_active: false
+#   is_banned: false
+
+# two:
+#   username: MyString
+#   email: MyString
+#   fname: MyString
+#   lname: MyString
+#   bio: MyText
+#   dob: 2020-06-05
+#   password_digest: MyString
+#   gender: two
+#   profile_image: MyString
+#   city: MyString
+#   post_code: MyString
+#   last_active: 2020-06-05 18:29:14
+#   is_private: false
+#   is_active: false
+#   is_banned: false

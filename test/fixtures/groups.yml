@@ -1,0 +1,43 @@
+# # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   sport: one
+#   name: MyString
+#   description: MyText
+#   profile_image: MyString
+#   approval_type: one
+#   group_type: one
+#   has_skill_requirement: false
+#   skill_level: one
+#   has_max_capacity: false
+#   max_capacity:
+#   email: MyString
+#   phone: MyString
+#   address: MyString
+#   city: MyString
+#   state: MyString
+#   post_code: MyString
+#   is_private: false
+#   is_active: false
+#   is_banned: false
+
+# two:
+#   sport: two
+#   name: MyString
+#   description: MyText
+#   profile_image: MyString
+#   approval_type: two
+#   group_type: two
+#   has_skill_requirement: false
+#   skill_level: two
+#   has_max_capacity: false
+#   max_capacity:
+#   email: MyString
+#   phone: MyString
+#   address: MyString
+#   city: MyString
+#   state: MyString
+#   post_code: MyString
+#   is_private: false
+#   is_active: false
+#   is_banned: false
