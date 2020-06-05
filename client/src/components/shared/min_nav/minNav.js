@@ -3,7 +3,7 @@ import Logo from "./../../../assets/images/logoFull.svg";
 import { Link } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 
-export default function LandingPage() {
+export default function MinNav() {
   return (
     <React.Fragment>
       <header>
