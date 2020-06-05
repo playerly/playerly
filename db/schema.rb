@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_04_225225) do
+ActiveRecord::Schema.define(version: 2020_06_05_061114) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -38,11 +38,46 @@ ActiveRecord::Schema.define(version: 2020_06_04_225225) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "approval_types", force: :cascade do |t|
+    t.string "option"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["option"], name: "index_approval_types_on_option", unique: true
+  end
+
   create_table "genders", force: :cascade do |t|
     t.string "identity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["identity"], name: "index_genders_on_identity", unique: true
+  end
+
+  create_table "group_types", force: :cascade do |t|
+    t.string "option"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["option"], name: "index_group_types_on_option", unique: true
+  end
+
+  create_table "roles", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_roles_on_name", unique: true
+  end
+
+  create_table "skill_levels", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_skill_levels_on_name", unique: true
+  end
+
+  create_table "sports", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_sports_on_name", unique: true
   end
 
 end

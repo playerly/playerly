@@ -3,7 +3,12 @@ Rails.application.routes.draw do
 	ActiveAdmin.routes(self)
 
 	scope '/api' do
+		resources :approval_types
 		resources :genders
+		resources :group_types
+		resources :roles
+		resources :skill_levels
+		resources :sports
 	end
 	
 	get '*path', to: "application#fallback_index_html", constraints: ->(request) do
