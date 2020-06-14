@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 2020_06_05_083945) do
     t.boolean "has_skill_requirement"
     t.integer "skill_level_id", null: false
     t.boolean "has_max_capacity"
-    t.integer "max_capacity"
+    t.bigint "max_capacity"
     t.string "email"
     t.string "phone"
     t.string "address"
@@ -88,8 +88,8 @@ ActiveRecord::Schema.define(version: 2020_06_05_083945) do
   end
 
   create_table "memberships", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "group_id"
+    t.bigint "user_id"
+    t.bigint "group_id"
     t.integer "role_id", null: false
     t.boolean "is_banned"
     t.datetime "created_at", precision: 6, null: false
@@ -122,8 +122,8 @@ ActiveRecord::Schema.define(version: 2020_06_05_083945) do
   end
 
   create_table "user_sports", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "sport_id"
+    t.bigint "user_id"
+    t.bigint "sport_id"
     t.integer "skill_level_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
